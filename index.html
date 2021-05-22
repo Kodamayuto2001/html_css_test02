@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test02</title>
+</head>
+<body>
+    <header>
+        <div class="mainheader">
+            <div class="mainheader_left">
+                <div class="textlogo">
+                    <h1>text</h1>
+                </div>
+            </div>
+            <div class="mainheader_main">
+                <div class="mainlogo">
+                    <h1>main</h1>
+                </div>
+            </div>
+            <div class="mainheader_right">
+                <div class="">
+                    <h1>none</h1>
+                </div>
+            </div>
+        </div>
+        <div class="subheader">
+            <div class="subheader_left"></div>
+            <div class="subheader_main">
+                <h1>タブ</h1>
+                <h1>タブ</h1>
+                <h1>タブ</h1>
+                <h1>タブ</h1>
+                <h1>タブ</h1>
+            </div>
+            <div class="subheader_right"></div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="volume">
+            <img src="sound.png" alt="">
+            <div class="bar_volume"></div>
+        </div>
+        <div class="listener">
+            <img src="kaeru.png" alt="">
+            <h1>参加人数　0人</h1>
+        </div>
+        <div class="icon_moriagetaro">
+            <img src="moriagetaro.png" alt="" class="moriagetaro3">
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+* {
+    margin: 0px;    
+    padding: 0px;
+}
+body {
+    background-color: #F3B700;
+}
+header {
+    background-color: #fff;
+}
+.mainheader {
+    background-color: none;
+    display: flex;
+}
+.mainheader_left {
+    flex-grow: 1;
+    
+    /* 直下の要素を並列に */
+    display: flex;
+
+    /* 左右中央に配置 */
+    justify-content: center;    
+}
+.mainheader_main {
+    flex-grow: 1;
+
+    /* 直下の要素を並列に */
+    display: flex;
+
+    /* 左右中央に配置 */
+    justify-content: center;
+}
+.mainheader_right {
+    flex-grow: 1;
+
+    /* 直下の要素を並列に */
+    display: flex;
+
+    /* 左右中央に配置 */
+    justify-content: center;
+}
+.subheader {
+    background-color: #93CE14;
+    display: flex;
+}
+.subheader_left {
+    flex-grow: 1;
+    flex-basis: 30%;
+
+    background-color: #ddd;
+}
+.subheader_main {
+    flex-grow: 1;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: #ccc;
+}
+.subheader_right {
+    flex-grow: 1;
+    flex-basis: 30%;
+
+    background-color: #bbb;
+}
+
+.main {
+    background-color: #aaa;
+
+    /* 絶対的な位置 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* アイテムの中心がcenterになるように調整 */
+    transform: translateY(-50%) translateX(-50%);
+
+    padding-top: 30px;
+    /* padding-bottom: 30px; */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.volume {
+    background-color: #999;
+    display: flex;
+}
+.listener {
+    background-color: #888;
+    display: flex;
+    align-items: center;
+}
+.icon_moriagetaro {
+    background-color: #777;
+    display: flex;
+    float: right;
+}
+.moriagetaro3 {
+    height: 100px;
+}
+</style>
